@@ -11,31 +11,31 @@ import { SharedService } from 'src/app/services/shared.service';
 export class AboutComponent implements OnInit {
   skillGroup: any[] = [
     {
-      img: '../../../../assets/images/html-5.png',
+      img: './assets/images/html-5.png',
       description: 'Advanced knowladge of HTML',
     },
     {
-      img: '../../../../assets/images/css-3.png',
+      img: './assets/images/css-3.png',
       description: 'Advanced knowladge of CSS',
     },
     {
-      img: '../../../../assets/images/Sass.png',
+      img: './assets/images/Sass.png',
       description: 'Advanced knowladge of SCSS',
     },
     {
-      img: '../../../../assets/images/bootstrap.png',
+      img: './assets/images/bootstrap.png',
       description: 'Basic knowladge of Bootstrap',
     },
     {
-      img: '../../../../assets/images/java-script.png',
+      img: './assets/images/java-script.png',
       description: 'Advanced knowladge of JavaScript',
     },
     {
-      img: '../../../../assets/images/typescript.png',
+      img: './assets/images/typescript.png',
       description: 'Advanced knowladge of TypeScript',
     },
     {
-      img: '../../../../assets/images/angular.png',
+      img: './assets/images/angular.png',
       description: 'Advanced knowladge of Angular',
     },
   ];
