@@ -1,0 +1,55 @@
+
+       [
+            {
+            "image":"./assets/images/portfolio.png",
+            "description": "Portfolio website built from scratch using Angular, Typescript, SCSS",
+            "githubUrl": "https://github.com/Kocha357/Portfolio-in-angular",
+            "githubPagesUrl": ""
+            },
+            {
+            "image":"./assets/images/calculator.PNG",
+            "description": "Simple calculator created using Html,CSS and JavaScript",
+            "githubUrl": "https://github.com/Kocha357/Calculator",
+            "githubPagesUrl": "https://kocha357.github.io/Calculator/"
+            },
+            {
+             "image":"./assets/images/todo.png",
+            "description": "ToDo app created using Html,CSS and JavaScript. Every task is saved to localStorage.",
+            "githubUrl": "https://github.com/Kocha357/ToDo-App",
+            "githubPagesUrl": "https://kocha357.github.io/ToDo-App/"
+            },
+            {
+             "image":"./assets/images/circle-bg.PNG",
+            "description": "Simple rotating circle animation. Created using CSS. Practice for use pseudoelements and filters.",
+            "githubUrl": "https://github.com/Kocha357/Circle-CSS-animation",
+            "githubPagesUrl": "https://kocha357.github.io/Circle-CSS-animation/"
+            },
+            {
+            "image":"./assets/images/galery-bg.PNG",
+            "description": "Simple responsive gallery.Created using CSS. Practice for use media queries.",
+            "githubUrl": "https://github.com/Kocha357/galrija",
+            "githubPagesUrl": "https://kocha357.github.io/galrija/"
+            },
+            {
+           "image":"./assets/images/site-bg.PNG",
+            "description": "Website created using Bootstrap, for practice purpose.Practice for use Bootstrap and media queries.",
+            "githubUrl": "https://github.com/Kocha357/bootstrap",
+            "githubPagesUrl": "https://kocha357.github.io/bootstrap/"
+            },
+            {
+             "image":"./assets/images/quiz.PNG",
+            "description": "Quiz created using JavaScrit. For practice of promise and Fetch API.",
+            "githubUrl": "https://github.com/Kocha357/Quiz-app",
+            "githubPagesUrl": "https://kocha357.github.io/Quiz-app/"
+            },
+            {
+            "image":"./assets/images/Dad-jokes.PNG",
+            "description": "Random generated dad jokes using Fetch API",
+            "githubUrl": "https://github.com/Kocha357/Dad-Jokes",
+            "githubPagesUrl": "https://kocha357.github.io/Dad-Jokes/"
+            }
+          
+        
+      ]
+    
+    

@@ -1,0 +1,37 @@
+<section class="projects-wrapper">
+  <h2>PROJECTS</h2>
+  <div class="projects">
+    <h3>Real projects:</h3>
+    <div class="real-projects">
+      <p>
+        Development and implementation of the “15 minute payout" feature in
+        cooperation with Senior Frontend Developer.
+      </p>
+      <p>
+        Implementation of IPS Deposit feature into the betting platform using
+        Angular,TypeScript and SCSS.
+      </p>
+
+      <p>
+        Worked on the transformation of the company platform website into a
+        Responsive Platform.
+      </p>
+    </div>
+    <h3>Practice projects:</h3>
+    <div class="proj-wrapper">
+      <div class="project" *ngFor="let project of getProjects$ | async">
+        <img [src]="project.image" alt="" />
+        <p>{{ project.description }}</p>
+        <div class="btn-wrapper">
+          <a [href]="project.githubUrl">GitHub</a>
+          <a
+            *ngIf="project.githubPagesUrl !== ''"
+            class="second-btn"
+            [href]="project.githubPagesUrl"
+            >GitHub Pages</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

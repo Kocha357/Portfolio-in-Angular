@@ -1,0 +1,83 @@
+@import '../../../SCSS-variable/variable';
+
+
+.tab-wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-bottom: 1px solid $color-border;
+      border-top: 1px solid $color-border;
+      color: $color-text-primary;
+      text-transform: uppercase;
+      font-size: 20px;
+      @media screen and (min-width: 1280px){
+            border: 1px solid $color-border;
+      }
+            .tab{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding: 1rem;            
+            }
+            .tab-about{
+                  opacity: 0.6;
+
+                  &.selected{
+                        opacity: 1;
+                        color:$color-text-orange;
+                        border-bottom: 2px solid $color-text-orange;
+                        -webkit-box-shadow: inset 0px -20px 28px -25px rgba(255, 255, 255, 0.228);
+                        -moz-box-shadow: inset 0px -20px 28px -25px rgba(255, 255, 255, 0.228);
+                        box-shadow: inset 0px -20px 28px -25px rgba(255, 255, 255, 0.228);
+                  }
+            }
+            .tab-skills{
+                  opacity: 0.6;
+
+                  &.selected{
+                        opacity: 1;
+                        color:$color-text-green;
+                        border-bottom: 2px solid $color-text-green;
+                        -webkit-box-shadow: inset 0px -20px 28px -25px rgba(255, 255, 255, 0.228);
+                        -moz-box-shadow: inset 0px -20px 28px -25px rgba(255, 255, 255, 0.228);
+                        box-shadow: inset 0px -20px 28px -25px rgba(255, 255, 255, 0.228);
+                  }
+            }
+}
+.about-wrapper{
+      padding: 1rem 1rem;
+      color: $color-text-secondary;
+      font-size: 17px;
+     
+      a{
+            color:$color-text-orange
+      }
+}
+.skills-wrapper{
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+      padding:1rem;
+      gap: 2.9rem;
+     
+      .skill{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid $color-text-orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            color: $color-text-secondary;
+                  img{
+                        width: 70px;
+                        filter: drop-shadow(0px 1px 10px #000);
+
+                  }
+      }
+      .skill:nth-child(even){
+            border-color: $color-text-green;
+      }
+}

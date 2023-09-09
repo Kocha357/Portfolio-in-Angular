@@ -1,0 +1,29 @@
+<div class="wrapper" *ngIf="sharedService.isDesktop$ | async">
+  <router-outlet></router-outlet>
+  <app-contact-me></app-contact-me>
+  <footer *ngIf="sharedService.isDesktop$ | async">
+    <p>&copy; 2023 | dusan.kovacevic93@outlook.com</p>
+  </footer>
+</div>
+
+<app-nav-bar></app-nav-bar>
+
+<app-header
+  id="header"
+  *ngIf="!(sharedService.isDesktop$ | async)"
+></app-header>
+<app-about id="about" *ngIf="!(sharedService.isDesktop$ | async)"></app-about>
+<app-projects
+  id="projects"
+  *ngIf="!(sharedService.isDesktop$ | async)"
+></app-projects>
+<app-contact-me
+  id="contact"
+  *ngIf="!(sharedService.isDesktop$ | async)"
+></app-contact-me>
+<app-side-menu
+  (scrollToComponentEvent)="scrollTo($event)"
+  *ngIf="
+    !(sharedService.isDesktop$ | async) && (sharedService.openSideMenu$ | async)
+  "
+></app-side-menu>

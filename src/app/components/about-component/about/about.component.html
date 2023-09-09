@@ -1,0 +1,37 @@
+<div class="tab-wrapper">
+  <div
+    class="tab-about tab"
+    (click)="showTab('aboutTab')"
+    [class.selected]="activeGroupingTab === 'aboutTab'"
+  >
+    About me
+  </div>
+  <div
+    class="tab-skills tab"
+    (click)="showTab('skillsTab')"
+    [class.selected]="activeGroupingTab === 'skillsTab'"
+  >
+    Skills
+  </div>
+</div>
+
+<div class="about-wrapper" *ngIf="activeGroupingTab === 'aboutTab'">
+  <p class="about-text">
+    Hey! My name is Dusan Kovacevic from Belgrade, Serbia. I`m a Junior Frontend
+    Developer with a growing skill set in JavaScript, TypeScript, Angular, HTML,
+    CSS, SCSS, Bootstrap, Git, and GitHub. Passionate about creating responsive
+    and user-friendly web applications, I'm committed to learning and developing
+    my expertise in web development to contribute to exciting projects.
+  </p>
+  <a
+    href="../../../../assets/PDF/Dusan_Kovacevic_CV.pdf"
+    download="Dusan_Kovacevic_CV.pdf"
+    >Download My CV</a
+  >
+</div>
+<div class="skills-wrapper" *ngIf="activeGroupingTab === 'skillsTab'">
+  <div class="skill" *ngFor="let skill of skillGroup">
+    <img [src]="skill.img" alt="" />
+    <p>{{ skill.description }}</p>
+  </div>
+</div>

@@ -1,0 +1,70 @@
+@import '../../../SCSS-variable/variable';
+
+.contact{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;          
+      color: $color-text-primary;
+
+      h2{   
+            width: 100%;
+            text-align: start;
+            border-bottom: 1px solid $color-border;
+            border-top: 1px solid $color-border;
+            padding: 1rem;
+            @media screen and (min-width: 1280px){
+                  display: none;
+            }
+      }
+      .contact-wrapper{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 10px;
+            text-align: center;
+            width: 100%;
+            padding: 2rem 0;
+            position: relative;
+            top: -0.7rem;
+            @media screen and (min-width: 1280px){
+                 padding: 0;;
+            }
+            a{
+                  text-decoration: none;
+                  outline: none;
+                  position: relative;
+                  
+                  &:hover{
+                        p{
+                              right: 7rem;
+                        }
+                  }
+                  p{
+                        position: absolute;
+                         color:$color-text-secondary;
+                         top: 1.7rem;
+                        right: -20rem;
+                        z-index: -2;
+                        white-space: nowrap;
+                        @media screen and (max-width: 1280px){
+                              display: none;
+                        }
+                  }
+                  
+            }
+      }
+}
+footer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 1rem;
+      color: $color-text-secondary;
+      background-color: $color-background-secondary;
+      text-align: center;
+      @media screen and (min-width: 1280px){
+            display: none;
+      }
+}

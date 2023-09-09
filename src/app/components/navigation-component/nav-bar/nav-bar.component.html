@@ -1,0 +1,19 @@
+<nav class="mobile-nav-wrapper" *ngIf="!(sharedService.isDesktop$ | async)">
+  <div class="line-wrap" (click)="openSideMenu()">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+</nav>
+<nav class="desktop-nav-wrapper" *ngIf="sharedService.isDesktop$ | async">
+  <div class="wrapper">
+    <div
+      class="item"
+      *ngFor="let item of desktopNavItems"
+      (click)="navigateTo(item)"
+      [class.selected]="(isSelected$ | async) === item"
+    >
+      {{ item }}
+    </div>
+  </div>
+</nav>

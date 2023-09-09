@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../src/app/SCSS-variable/variable';
+
+body{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      background-color: $color-background;
+      font-family: sans-serif;
+     /* Styling scrollbar for Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #888 $color-background;
+}
+body::-webkit-scrollbar {
+      width: 6px;
+      background-color: $color-background;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+      background-color: $color-background-secondary;
+      border-radius: 6px;
+  }
+  
+  
