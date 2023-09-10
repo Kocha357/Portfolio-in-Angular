@@ -19,15 +19,15 @@ export class NavBarComponent implements OnInit {
   ) {}
   ngOnInit(): void {
     if (this.sharedService.isDesktop$.value) {
-      this.navigateTo('home');
+      this.navigateTo('/home');
     }
   }
   openSideMenu(): void {
     this.sharedService.openSideMenu$.next(true);
   }
   navigateTo(input: string) {
-    if (input === 'home') {
-      this.router.navigate(['header']);
+    if (input === '/home') {
+      this.router.navigate(['/header']);
     } else {
       this.router.navigate([input]);
     }

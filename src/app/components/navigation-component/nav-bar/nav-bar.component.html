@@ -10,8 +10,8 @@
     <div
       class="item"
       *ngFor="let item of desktopNavItems"
-      (click)="navigateTo(item)"
-      [class.selected]="(isSelected$ | async) === item"
+      (click)="navigateTo('/' + item)"
+      [class.selected]="(isSelected$ | async) === '/' + item"
     >
       {{ item }}
     </div>
