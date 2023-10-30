@@ -13,20 +13,21 @@ export class SharedService {
   constructor(private readonly http: HttpClient) {}
 
   getProjects(): Observable<DataModel[]> {
-    return this.http.get<any[]>('./assets/jsonData/info.json').pipe(
+    return this.http.get<DataModel[]>('./assets/jsonData/info.json').pipe(
       map((response) => {
         if (!response || response.length === 0) {
           throw new Error('No data received from the server');
         }
-
-        const data: DataModel[] = response.map(
-          (item: any) =>
+        const data: DataModel[] = [];
+        response.forEach((res) =>
+          data.push(
             new DataModel({
-              image: item.image,
-              description: item.description,
-              githubUrl: item.githubUrl,
-              githubPagesUrl: item.githubPagesUrl,
+              image: res.image,
+              description: res.description,
+              githubUrl: res.githubUrl,
+              githubPagesUrl: res.githubPagesUrl,
             })
+          )
         );
 
         return data; // Return the transformed data as an array of DataModel
