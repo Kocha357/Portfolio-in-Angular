@@ -16,6 +16,8 @@
             border-bottom: 1px solid $color-border;
             padding: 1rem;
             margin: 0;
+            text-align: center;
+            color: $color-text-orange;
             @media screen and (min-width: 1280px){
                   display: none;
             }
@@ -38,6 +40,8 @@
                   text-align: start;
                   width: 100%;
                   text-decoration: underline;
+                  text-align: center;
+                  color: $color-text-green;
                   @media screen and (min-width:1280px){
                         text-decoration: none;
                         border-bottom: 1px solid $color-border;
@@ -52,42 +56,25 @@
                   align-items: center;
                   gap: 10px;
                  
-                      p{
-                              border:1px solid $color-border;
-                              border-radius: 4px;
-                              background-color: $color-background-light;
-                              padding: 10px;
-                              font-weight: 700;
-                              width: 100%;
-                              @media screen and (min-width: 880px){
-                                   flex-basis: 30%;
-                                    height: 100px;
-                              }
-                             
-                        }
+                      
             }
             .proj-wrapper{
-                  display: flex;
-                  flex-flow: row wrap;
-                  align-items: center;
-                  justify-content: center;
+                  display: grid;
+                  grid-template-columns: repeat(3,1fr);
                   gap: 10px;
-                 @media screen and (min-width:880px){
-                  justify-content: space-evenly;
-                 }
+                  @media screen and (max-width:1280px){
+                        grid-template-columns: repeat(1,1fr);
+                  }
                   .project{
                   display: flex;
                   flex-direction: column;
                   align-items: center;
+                  justify-content: space-between;
                   border: 1px solid $color-border;
                   border-radius: 4px;
                   padding: 10px;
                   background-color: $color-background-light;
-                  @media screen and (min-width: 880px){
-                       flex-basis: 30%;
-                        justify-content: space-between;
-                        
-                  }
+                 
                  
                   img{
                         width: 100%;
